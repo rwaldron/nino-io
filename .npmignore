@@ -1,0 +1,4 @@
+node_modules/
+test/
+watch.js
+send.sh
