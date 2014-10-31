@@ -1,0 +1,48 @@
+{
+  "name": "nino-io",
+  "description": "Nino-IO is an IO Plugin that enables running Johnny-Five programs on a Linino One or Arduino Yun",
+  "version": "0.1.0",
+  "homepage": "https://github.com/rwaldron/nino-io",
+  "author": {
+    "name": "Rick Waldron <waldron.rick@gmail.com>",
+    "email": "waldron.rick@gmail.com"
+  },
+  "contributors": [],
+  "keywords": [
+    "linino",
+    "yun",
+    "io",
+    "arduino",
+    "doghunter",
+    "firmata",
+    "johnny-five"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rwaldron/nino-io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rwaldron/nino-io/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/rwaldron/nino-io/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/nino-io",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "es6-shim": "latest",
+    "es6-promise": "latest"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "js-flags": "--harmony",
+  "devDependencies": {
+    "mock-fs": "^2.3.2"
+  }
+}
