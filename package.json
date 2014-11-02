@@ -38,6 +38,16 @@
     "es6-shim": "latest",
     "es6-promise": "latest"
   },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-jsbeautifier": "~0.2.2",
+    "request": "^2.47.0",
+    "rewire": "~2.0.0",
+    "sinon": "~1.7.3"
+  },
   "scripts": {
     "test": "grunt"
   },
