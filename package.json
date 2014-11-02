@@ -1,7 +1,7 @@
 {
   "name": "nino-io",
   "description": "Nino-IO is an IO Plugin that enables running Johnny-Five programs on a Linino One or Arduino Yun",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/rwaldron/nino-io",
   "author": {
     "name": "Rick Waldron <waldron.rick@gmail.com>",
