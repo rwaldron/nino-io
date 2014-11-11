@@ -1,4 +1,7 @@
 node_modules/
 test/
+junk/
+lib/fs-mock.js
 watch.js
 send.sh
+board
