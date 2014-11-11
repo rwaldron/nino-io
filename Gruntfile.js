@@ -45,7 +45,7 @@ module.exports = function(grunt) {
           WeakMap: true,
           Map: true,
           window: true,
-          IS_TEST_MODE: true
+          IS_TEST_ENV: true
         }
       },
       files: {
