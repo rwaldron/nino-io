@@ -44,6 +44,7 @@ var fsStub = {
 Nino.__set__("fs", fsStub);
 
 var Pin = Nino.__Pin;
+var read = Nino.__read;
 
 
 function restore(target) {
@@ -665,4 +666,32 @@ exports["Nino.prototype.pinMode (pwm/servo)"] = {
 
     test.done();
   },
+};
+
+exports["Nino.prototype.setSamplingInterval"] = {
+  setUp: function(done) {
+    this.clock = sinon.useFakeTimers();
+    this.nino = new Nino();
+
+    done();
+  },
+  tearDown: function(done) {
+    restore(this);
+    Nino.reset();
+
+    done();
+  },
+  samplingIntervalDefault: function(test) {
+    test.expect(1);
+    read();
+    test.equal(read.samplingInterval, 1);
+    test.done();
+  },
+  samplingIntervalCustom: function(test) {
+    test.expect(1);
+    read();
+    this.nino.setSamplingInterval(1000);
+    test.equal(read.samplingInterval, 1000);
+    test.done();
+  }
 };
