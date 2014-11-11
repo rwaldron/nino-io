@@ -1,7 +1,7 @@
 {
   "name": "nino-io",
   "description": "Nino-IO is an IO Plugin that enables running Johnny-Five programs on a Linino One or Arduino Yun. Firmata & YunBridge are NOT required.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://github.com/rwaldron/nino-io",
   "author": {
     "name": "Rick Waldron <waldron.rick@gmail.com>",
