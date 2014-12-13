@@ -11,6 +11,9 @@ Nino-IO is a Firmata.js-compatibility class for writing Node.js programs that ru
 
 Nino-IO scripts are run directly from the Linino One or Arduino Yun board. To get started, [install Node.js on the board](http://wiki.linino.org/doku.php?id=wiki:nodejscript). 
 
+### LininoOS
+
+For Nino-IO to operate correctly, the Arduino Yun or Linino One must be running LininoOS. 
 **IMPORTANT:** The Linino expects all user code to exist in `/opt`! When connecting to the board, remember to: `cd /opt`. This is how the `nodeyun_inst_latest.sh` installer program sets up the filesystem on the Linino's SD Card. 
 
 
