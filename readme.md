@@ -22,7 +22,8 @@ For Nino-IO to operate correctly, the Arduino Yun or Linino One must be running 
 ### Installation
 
 ```
-npm install nino-io johnny-five
+npm install johnny-five
+npm install nino-io --unsafe-perm
 ```
 
 [See Johnny-Five's examples for usage.](https://github.com/rwaldron/johnny-five)
