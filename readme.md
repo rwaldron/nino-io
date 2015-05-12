@@ -14,6 +14,18 @@ Nino-IO scripts are run directly from the Linino One or Arduino Yun board. To ge
 ### LininoOS
 
 For Nino-IO to operate correctly, the Arduino Yun or Linino One must be running LininoOS. 
+
+
+Assuming you've already completed the [Yun Disk Expansion](http://arduino.cc/en/Tutorial/ExpandingYunDiskSpace), complete the following commands: 
+
+- Upgrade the firmware on the MCU:
+```sh
+cd /tmp
+wget http://download.linino.org/pkg-bin/serialTerminal.hex
+run-avrdude /tmp/serialTerminal.hex
+```
+
+
 **IMPORTANT:** The Linino expects all user code to exist in `/opt`! When connecting to the board, remember to: `cd /opt`. This is how the `nodeyun_inst_latest.sh` installer program sets up the filesystem on the Linino's SD Card. 
 
 
