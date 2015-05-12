@@ -35,8 +35,7 @@
     "node": ">=0.8.0"
   },
   "dependencies": {
-    "es6-shim": "latest",
-    "es6-promise": "latest"
+    "es6-shim": "latest"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
