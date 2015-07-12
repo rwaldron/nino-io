@@ -13,7 +13,7 @@ Nino-IO scripts are run directly from the Linino One or Arduino Yun board. To ge
 
 ### LininoOS
 
-For Nino-IO to operate correctly, the Arduino Yun or Linino One must be running LininoOS. 
+For Nino-IO to operate correctly, the Arduino Yun or Linino One must be running both LininoOS and LininoIO. On a newly purchased Linino One this will already be the case. If you've purchased an Arduino Yun, it will be necessary to [upgrade to LininoOS and LininoIO](http://wiki.linino.org/doku.php?id=wiki:upgradetolininoio). 
 
 
 Assuming you've already completed the [Yun Disk Expansion](http://arduino.cc/en/Tutorial/ExpandingYunDiskSpace), complete the following commands: 
