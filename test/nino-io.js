@@ -695,3 +695,57 @@ exports["Nino.prototype.setSamplingInterval"] = {
     test.done();
   }
 };
+
+exports["Pin"] = {
+  setUp: function(done) {
+    this.supported = [0, 1, 2, 3, 4];
+    this.a = new Pin({
+      modes: this.supported,
+      analogChannel: 1,
+      addr: 1,
+      config: {
+        ENA: true,
+        DEF: "A1",
+        TYP: "analog",
+        NUM: "138",
+        MAP: "A1"
+      }
+    });
+
+    this.d = new Pin({
+      modes: this.supported,
+      analogChannel: null,
+      addr: 1,
+      config: {
+        ENA: false,
+        DEF: "D1",
+        TYP: "digital",
+        NUM: "?",
+        MAP: "?"
+      }
+    });
+    done();
+  },
+  tearDown: function(done) {
+    restore(this);
+    Nino.reset();
+
+    done();
+  },
+  analog: function(test) {
+    test.expect(4);
+    test.equal(this.a.analogChannel, 1);
+    test.deepEqual(this.a.supportedModes, this.supported);
+    test.equal(this.a.value, null);
+    test.equal(this.a.mode, 2);
+    test.done();
+  },
+  digital: function(test) {
+    test.expect(4);
+    test.equal(this.d.analogChannel, null);
+    test.deepEqual(this.d.supportedModes, this.supported);
+    test.equal(this.d.value, null);
+    test.equal(this.d.mode, 1);
+    test.done();
+  }
+};
