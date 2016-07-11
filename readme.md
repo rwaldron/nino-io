@@ -2,7 +2,9 @@
 
 [![Build Status](https://travis-ci.org/rwaldron/nino-io.png?branch=master)](https://travis-ci.org/rwaldron/nino-io)
 
-## Nino-IO is compatible with Linino One and Arduino Yun.
+## Nino-IO is compatible with Linino One ~~and Arduino Yun~~.
+
+**Unfortunately, the creators of Linino One and the LininoOS have not been very helpful in responding to my requests for help with Arduino Yun compatibly. As such, this project no longer supports the Yun (which is fine, because it never really did)**
 
 
 Nino-IO is a Firmata.js-compatibility class for writing Node.js programs that run on the [Linino One](http://www.linino.org/modules/linino-one/) or [Arduino Yun](http://www.linino.org/modules/yun/). This project was built at [Bocoup](http://bocoup.com)
